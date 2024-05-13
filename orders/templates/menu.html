@@ -1,0 +1,146 @@
+{% load static %}
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+    
+        header {
+            background-color: brown;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+    
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+    
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+    
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            background-color:brown;
+        }
+    
+        nav ul li a:hover {
+            background-color:grey
+        }
+    
+        .main {
+            padding: 20px;
+        }
+    
+        .menu-category {
+            margin-bottom: 40px;
+        }
+    
+        .menu-item {
+            border-bottom: 1px solid brown;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+    
+        .menu-item h3 {
+            margin-top: 0;
+        }
+    
+        .menu-item span {
+            font-weight: bold;
+        }
+    
+        footer {
+            background-color:brown;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+      </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+</head>
+<body>
+    <header>
+        <h1>Our Menu</h1>
+    
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Appetizers</a></li>
+            <li><a href="#">Main Courses</a></li>
+            <li><a href="#">Desserts</a></li>
+            <li><a href="#">Drinks</a></li>
+        </ul>
+    </nav>
+        <section class="menu-category" id="appetizers">
+            <h2>Appetizers</h2>
+            <div class="menu-item">
+                <img src="{% static '/appti.jpeg' %}" class="card" width="500px" height="250px">
+                <img src="{% static '/lio.avif' %}" class="card" width="500px" height="250px">
+                <img src="{% static '/pasta.jpeg' %}" class="card" width="500px" height="250px">
+                <img src="{% static '/pizza-1.jpeg' %}" class="card" width="300px" height="150px">
+                <img src="{% static '/nib.avif' %}" class="card" width="300px" height="150px">
+                <img src="{% static '/psa.webp' %}" class="card" width="300px" height="150px">
+                <img src="{% static '/photo3.avif' %}" class="card" width="300px" height="150px">
+                <img src="{% static '/photo52.avif' %}" class="card" width="300px" height="150px">
+                <img src="{% static '/fd.jpeg' %}" class="card" width="500px" height="250px">
+                <img src="{% static '/psa.webp' %}" class="card" width="500px" height="250px">
+                <img src="{% static '/foody.jpeg' %}" class="card" width="500px" height="250px">   
+            </div>
+        </section>
+            <!-- Add more items here -->
+        <section clas="menu-category" id="Desserts">
+            <h2>Desserts</h2>
+            <div class="menu-item">
+                <img src="{% static '/cake.webp' %}" class="card" width="500px" height="500px">
+                <img src="{% static '/photo1.avif' %}" class="card" width="500px" height="500px">
+                <img src="{% static '/110+ Delicious Indian Sweets Images HD With Names and Info.jpeg' %}" class="card" width="500px" height="500px">
+                <img src="{% static '/pud.avif' %}" class="card" width="500px" height="500px">
+                <img src="{% static '/io.jpg' %}" class="card" width="500px" height="500px">
+                <img src="{% static '/choclate.avif' %}" class="card" width="500px" height="500px">
+                <img src="{% static '/ylw.avif' %}" class="card" width="500px" height="500px">
+                <img src="{% static '/ice.avif' %}" class="card" width="500px" height="500px">
+                <img src="{% static '/photo-2.avif' %}" class="card" width="500px" height="500px">
+                <img src="{% static '/cke.avif' %}" class="card" width="500px" height="500px">
+                <img src="{% static '/io.jpg' %}" class="card" width="500px" height="500px">
+                <img src="{% static '/choclate.avif' %}" class="card" width="500px" height="500px">  
+            </div>
+        </section>
+    <section clas="menu-category" id="drink">
+        <h2>Drink Items</h2>
+        <div class="menu-item">
+            <img src="{% static '/juice1.jpg'' %}" class="card" width="500px" height="250px">
+            <img src="{% static '/shake.jpg'  %}" class="card" width="500px" height="250px">
+            <img src="{% static '/cofe.webp' %}" class="card" width="500px" height="250px">
+            <img src="{% static '/yeelo.avif' %}" class="card" width="300px" height="150px">
+            <img src="{% static '/moji.avif' %}" class="card" width="300px" height="150px">
+            <img src="{% static '/hy.jpg' %}" class="card" width="300px" height="150px">
+            <img src="{% static '/op.jpg' %}" class="card" width="300px" height="150px">
+            <img src="{% static '/ist.jpg' %}" class="card" width="300px" height="150px">
+        </div>
+    </section>
+
+    <footer>
+        <!-- Add footer content if needed -->
+        <p>© 2024 FoodApp. All rights reserved.</p>
+    </footer>
+</body>
+</html>

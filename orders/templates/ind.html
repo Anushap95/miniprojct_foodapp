@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+{{% block body %}
+    <div class="row">
+     {% for item in items %}   
+     <div class="col">
+        <div class="card" style="width:18rem;">
+          <img src="{{ item.Image.url }}" class="card-img-top" alt="..." >
+          <div class="card-body">
+          <h5 class="card-tittle">{{items.name}}</h5>
+         <p class="card-text">{{items.price}}</p>
+      </div>
+    </div>
+</div>
+
+ {% endfor %}
+  {% endblock body %}}
+</body>
+</html>
